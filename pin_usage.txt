@@ -1,0 +1,53 @@
+
+
+
+__________ MSP430 Pin Usages for our Robot __________
+
+P1.0
+P1.1
+P1.2 -		I2C SDA
+P1.3 -		I2C SCL
+P1.4
+P1.5 -		IMU_INT
+P1.6 -		IMU_ADO
+P1.7 -		SMCLK
+
+P2.0
+P2.1
+P2.2
+P2.3
+P2.4 -		USonic ECHO
+P2.5 -		UART RX
+P2.6 -		UART TX
+P2.7
+
+P3.0
+P3.1
+P3.2 -		I2C SDA (IMU)
+P3.3 -		Speakers (2ms)
+P3.4 -		USonic ECHO
+P3.5 -
+P3.6 -		I2C SCL (IMU)
+P3.7
+
+P4.0 -		LED0
+P4.1 -		LED1
+P4.2 -		LED2
+P4.3 -		USonic TRIG
+P4.4 -		USonic ECHO
+P4.5 -		PWM Output (20 ms)
+P4.6 -		PWM Output (20 ms)
+P4.7
+
+P5.0
+P5.1 - 		UART RX
+P5.2 -		UART TX
+P5.3
+P5.4 -		USonic ECHO
+P5.5 -		Button
+P5.6 -		Button
+P5.7 -		Button
+
+P6.0 -		Col_Trig
+P6.1
+P6.2

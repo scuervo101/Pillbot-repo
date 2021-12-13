@@ -1,0 +1,61 @@
+
+
+Commands List
+
+Term -> CMC
+
+0b1xxx xxxx =	Delivery command where the target = x
+0h70 =			Drop delivery target and enter idle state
+0h30 =			Kill robot
+0h20 =			Pause/Unpause motor functions (Stop/unstop moving)
+0h10 =			Output current CMC state
+
+CMC -> MSP430
+
+0hff = 			Handshake
+0h10 =			Move stop
+0h11 =			Move forward
+0h12 = 			Move backwards
+0h13 =			Rotate left
+0h14 =			Rotate right
+0h15 =			Scan
+0h16 =			Speaker alert
+0h20 =			Acknowledge msp430 has taken control
+0h22 =			Ack msp430 has taken control but play speaker
+0h0f =			Pause motor functions
+0h1f =			Kill robot
+0h3f = 			Fault condition
+
+MSP430 -> CMC
+
+0hff = 			Handshake
+0h10 =			Ack Motors current action is stopped	
+0h11 =			Ack Motors current action is foward
+0h12 =			Ack Motors current action is backwards
+0h13 =			Ack Motors current action is rotating left
+0h14 =			Ack Motors current action is rotating right
+0h15 =			Ack Currently scanning
+0h16 =			Ack Speaker alert
+0h20 =			MSP430 takes controll due to usonic range
+0h21 =			MSP430 takes controll due to collision
+0h22 = 			MSP430 has release control
+0h30 =			Pill has been received
+0h07 = 			Fault condition (Stopping motors)
+0h03 =			Error to acknowledge
+0h01 = 			Paused
+
+MSP430 -> MC
+
+'f' =			Move forward
+'b' =			Move backwars
+'s' =			Stop moving
+'l' =			Rotate left (ccw)
+'r' =			Rotate right (cw)
+'V' =			Get voltage (adc)
+'A' =			Get current (adc)
+
+MC -> MSP430
+
+after 'V'		Receive two bytes of adc data
+after 'A'		Receive two bytes of adc data
+'c' =			Collision on buttons

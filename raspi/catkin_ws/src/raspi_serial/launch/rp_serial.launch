@@ -1,0 +1,5 @@
+<launch>
+
+    <node pkg="raspi_serial" name="raspi_serial" type="rp_serial.py" output="screen"/>
+
+</launch>

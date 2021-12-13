@@ -1,0 +1,19 @@
+Boot process
+
+Flash msp430
+Wait until msp430 blue led is on
+
+Raspi
+
+Run py_term
+
+Start up raspyserial
+
+Start up raspicam
+Start up artuco_detect
+
+Start up rplidar
+Start up hector_slam
+Start up hector_nav
+
+Finally launch cmc
